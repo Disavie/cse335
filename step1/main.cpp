@@ -7,6 +7,7 @@
 
 #include <iostream>
 #include "Farm.h"
+#include "Cow.h"
 using namespace std;
 /**
  * Main entry point.
@@ -48,7 +49,12 @@ int main()
         switch (option)
         {
         case 1:
-            cout << "Adding cow" << endl;
+            {
+                cout << "Adding cow" << endl;
+                Cow *cow = new Cow();
+                cow->ObtainCowInformation();
+                farm.AddAnimal(cow);
+            }
             break;
 
         case 9:
