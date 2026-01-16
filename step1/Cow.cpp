@@ -81,3 +81,19 @@ void Cow::ObtainCowInformation()
         mMilkProduction = 0;
     }
 }
+
+void Cow::DisplayAnimal()
+{
+    cout << mName << ": ";
+    switch (mType)
+    {
+    case Type::BeefCow:
+            cout << "Beef Cow" << endl;
+    case Type::Bull:
+            cout << "Bull" << endl;
+            break;
+    case Type::MilkCow:
+            cout << "Milk Cow/" << mMilkProduction << "GPD" << endl;
+            break;
+    }
+}

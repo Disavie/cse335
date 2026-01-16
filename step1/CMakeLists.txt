@@ -7,4 +7,10 @@ add_executable(step1 main.cpp
         Farm.cpp
         Farm.h
         Cow.cpp
-        Cow.h)
+        Cow.h
+        Chicken.cpp
+        Chicken.h
+        Animal.cpp
+        Animal.h
+        Velociraptor.cpp
+        Velociraptor.h)

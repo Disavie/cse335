@@ -11,7 +11,8 @@
 #define STEP1_FARM_H
 
 #include <vector>
-#include "Cow.h"
+#include <iostream>
+#include "Animal.h"
 /**
  * Class that describes a farm.
  *
@@ -23,18 +24,38 @@ class Farm
 {
 private:
  /// A list with the inventory of all animals on the farm
- std::vector<Cow *> mInventory;
+ std::vector<Animal *> mInventory;
 
 public:
 
  /** Add an animal to the farm inventory.
  *
- * @param cow A cow to add to the inventory
+ * @param  A cow to add to the inventory
  */
- void Farm::AddAnimal(Cow *cow)
+ void Farm::AddAnimal(Animal *animal)
  {
-  mInventory.push_back(cow);
+  mInventory.push_back(animal);
  }
+
+ /**
+  * Display the farm inventory
+  */
+
+ void DisplayInventory()
+ {
+   for (auto animal : mInventory)
+   {
+     animal->DisplayAnimal();
+   }
+ }
+
+ /**
+  * Display farm aggressiveness stats
+  */
+ void DisplayAggressiveness();
+
+ ~Farm();
+
 };
 
 

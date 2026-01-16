@@ -5,9 +5,18 @@
  * Program main entry point
  */
 
+#ifndef WIN32
+#define _CRTDBG_MAP_ALLOC
+#include <cstdlib>
+#include <crtdbg.h>
+#endif
+
 #include <iostream>
 #include "Farm.h"
 #include "Cow.h"
+#include "Chicken.h"
+#include "Velociraptor.h"
+
 using namespace std;
 /**
  * Main entry point.
@@ -17,7 +26,9 @@ using namespace std;
  */
 int main()
 {
-
+    #ifdef WIN32
+    _CrtSetDbgFlag(_CRTDBG_ALLOC_MEM_DF | _CRTDBG_LEAK_CHECK_DF);
+    #endif
     cout << "Instantiating Farm" << endl;
     Farm farm;
 
@@ -29,6 +40,10 @@ int main()
         cout << endl;
         cout << "Farm management" << endl;
         cout << "1 - Add cow" << endl;
+        cout << "2 - Add chicken" << endl;
+        cout << "3 - Add velociraptor" << endl;
+        cout << "8 - Farm aggressiveness statistics" << endl;
+
         cout << "9 - List inventory" << endl;
         cout << "99 - Exit" << endl;
         cout << "Select Option: ";
@@ -56,9 +71,28 @@ int main()
                 farm.AddAnimal(cow);
             }
             break;
+        case 2:
+            {
+                cout << "Adding chicken" << endl;
+                Chicken *chicken = new Chicken();
+                chicken->ObtainChickenInformation();
+                farm.AddAnimal(chicken);
+            }
+            break;
+        case 3:
+            {
+                cout << "Adding velociraptor" << endl;
+                Velociraptor *velociraptor = new Velociraptor();
+                velociraptor->ObtainVelociraptorInformation();
+                farm.AddAnimal(velociraptor);
+            }
+            break;
+        case 8:
+            farm.DisplayAggressiveness();
+            break;
 
         case 9:
-            cout << "List inventory" << endl;
+            farm.DisplayInventory();
             break;
 
         case 99:

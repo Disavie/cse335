@@ -10,7 +10,9 @@
 
 #include <string>
 
-class Cow
+#include "Animal.h"
+
+class Cow : public Animal
 {
 private:
     /// The types of cow we can have on our farm
@@ -26,6 +28,16 @@ private:
     double mMilkProduction = 0;
 public:
     void ObtainCowInformation();
+
+    /**
+    * Display information about this cow
+    */
+    void DisplayAnimal();
+    int GetAggro()
+    {
+        return 0;
+    };
+
 };
 
 
