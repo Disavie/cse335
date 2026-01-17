@@ -1,7 +1,7 @@
 /**
 * @file Chicken.cpp
  *
- * @author davis stermer
+ * @author davisstermer
  */
 
 #include <iostream>

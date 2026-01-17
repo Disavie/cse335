@@ -1,9 +1,10 @@
 /**
 * @file Chicken.h
  *
- * @author Davis Stermer
+ * @author davisstermer
  *
- * Declaration of the Chicken class.
+ * Describes animals of type Chicken
+ * Inherits from the Animal class
  */
 
 #ifndef STEP1_CHICKEN_H
@@ -13,8 +14,12 @@
 
 #include "Animal.h"
 
-/** Class that describes a chicken.
-*/
+///aggro value of all chickens
+const int ChickenAggro = 1;
+/**
+ * Describes animals of type Chicken
+ * Inherits from the Animal class
+ */
 class Chicken : public Animal
 {
 private:
@@ -22,12 +27,23 @@ private:
     std::string mId;
 
 public:
-
+    /**
+     * Obtain information about this chicken from the user
+     */
     void ObtainChickenInformation();
+
+    /**
+    * displayed information about a chicken
+    */
     void DisplayAnimal();
+
+    /**
+     * returns aggro value of a chicken
+     * @return 1
+     */
     int GetAggro()
     {
-        return 1;
+        return ChickenAggro;
     };
 
 };

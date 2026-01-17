@@ -1,6 +1,6 @@
 /**
  * @file Farm.h
- * @author davis
+ * @author davisstermer
  *
  * Class that describes a farm
  * This class holds a collection of animals that make
@@ -30,9 +30,9 @@ public:
 
  /** Add an animal to the farm inventory.
  *
- * @param  A cow to add to the inventory
+ * @param  animal to be added to farm
  */
- void Farm::AddAnimal(Animal *animal)
+ void AddAnimal(Animal *animal)
  {
   mInventory.push_back(animal);
  }
@@ -41,13 +41,8 @@ public:
   * Display the farm inventory
   */
 
- void DisplayInventory()
- {
-   for (auto animal : mInventory)
-   {
-     animal->DisplayAnimal();
-   }
- }
+ void DisplayInventory();
+
 
  /**
   * Display farm aggressiveness stats

@@ -1,6 +1,6 @@
 /**
 * @file main.cpp
- * @author Davis Stermer
+ * @author davisstermer
  *
  * Program main entry point
  */

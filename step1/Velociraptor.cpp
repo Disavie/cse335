@@ -17,15 +17,16 @@ void Velociraptor::ObtainVelociraptorInformation()
     cout << "Name: ";
     cin >> mId;
     cout << "Aggro Factor: ";
-    string temp;
-    cin >> temp;
-    mAggro = stoi(temp);
+    cin >> mAggro;
     while (true)
     {
+        /// Check to make sure a nonzero number is provided for the aggro value
         if (mAggro <= 0)
         {
             cout << "A velociraptor is always aggressive to some degree, enter a number greater" << endl;
-        }else  if (mAggro > 100)
+
+
+        }else  if (mAggro > 100)    /// < Check to make sure the aggro value provided is not too large
         {
             cout << "The maximum aggro factor allowed is 100" << endl;
         }else

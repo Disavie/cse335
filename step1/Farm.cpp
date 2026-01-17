@@ -1,6 +1,6 @@
 /**
  * @file Farm.cpp
- * @author davis
+ * @author davisstermer
  */
 
 #include "Farm.h"
@@ -21,6 +21,20 @@ Farm::~Farm()
     mInventory.clear();
 }
 
+/**
+ * Display the farm inventory
+ */
+void Farm::DisplayInventory()
+{
+    for (auto animal : mInventory)
+    {
+        animal->DisplayAnimal();
+    }
+}
+/**
+ * Display the aggressiveness of the farm
+ * prints total aggressive animals and average aggressiveness value
+ */
 void Farm::DisplayAggressiveness()
 {
     float animalCount = 0;
@@ -35,6 +49,5 @@ void Farm::DisplayAggressiveness()
         }
         totalAggro += aggroVal;
     }
-    //There are 3 aggressive animals on the farm. The average aggressiveness level is 47.6667 aggro units.
     std::cout << "There are " << animalCount << " aggressive animals on the farm. The average aggressiveness level is " << totalAggro/animalCount << " aggro units." << std::endl;
 }

@@ -1,6 +1,6 @@
 /**
  * @file Cow.cpp
- * @author davis
+ * @author davisstermer
  */
 #include <iostream>
 #include "Cow.h"
