@@ -1,0 +1,34 @@
+Problem: You are designing classes for a university registrar. The universty has students, and each student has a name, a student ID, and a major. Students can enroll in courses. Each enrollment record has a semester, a course code, an enrollment date, and the student's name and ID.
+
+Scenario: A student named Steve with the student ID 52009 is majoring in Geological Science. Another student named Alex with the student ID 82014 is majoring in Electrical Engineering. In Spring 2026, Steve and Alex have enrolled in GLG361 on 1/5/2026 and ECE302 on 1/11/2026, respectively
+
+Provide the classes and attributes to solve this problem. Write them in this editor, and press submit to submit your answer to the peer review system. For this task we, are only interested in the classes and attributes, not the connections between classes.
+
+Enrollments : class
+
+Student : class
+name : string
+id : int
+major : string
+
+Enrollment : class
+semester : string
+code : string
+enrollmentDate : Date
+
+
+Games : class
+
+Team : class
+name : string
+university : string
+
+
+Game : class
+date : Date
+overtime : int
+
+Score : class
+away : int
+home : int
+
