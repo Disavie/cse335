@@ -2,7 +2,9 @@ project(AquariumLib)
 
 set(SOURCE_FILES pch.h
         MainFrame.cpp
-        MainFrame.h)
+        MainFrame.h
+        AquariumView.cpp
+        AquariumView.h)
 
 set(wxBUILD_PRECOMP OFF)
 find_package(wxWidgets COMPONENTS core base xrc html xml REQUIRED)

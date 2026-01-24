@@ -11,6 +11,10 @@
  */
 class AquariumApp : public wxApp {
 public:
+ /**
+ * Initialize the application.
+ * @return
+ */
  bool OnInit() override;
 };
 

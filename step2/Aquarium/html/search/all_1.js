@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['main_2ecpp_0',['main.cpp',['../main_8cpp.html',1,'']]]
+  ['initialize_0',['Initialize',['../class_main_frame.html#a24d3e82e4361b803cfb67a2983c37d4d',1,'MainFrame']]]
 ];
