@@ -1,6 +1,6 @@
 cmake_minimum_required(VERSION 3.20)
-project(Aquarium)
-set(APPLICATION_LIBRARY AquariumLib)
+project(DavisJStermer)
+set(APPLICATION_LIBRARY DavisJStermerLib)
 
 set(CMAKE_CXX_STANDARD 17)
 
@@ -17,7 +17,7 @@ add_subdirectory(${APPLICATION_LIBRARY})
 include_directories(${APPLICATION_LIBRARY})
 
 # Define a variable containing a list of source files for the project
-set(SOURCE_FILES main.cpp AquariumApp.cpp AquariumApp.h
+set(SOURCE_FILES main.cpp DavisJStermerApp.cpp DavisJStermerApp.h
         pch.h)
 
 add_executable(${PROJECT_NAME} WIN32 MACOSX_BUNDLE ${SOURCE_FILES})

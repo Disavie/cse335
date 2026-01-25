@@ -1,13 +1,13 @@
 /**
- * @file AquariumApp.cpp
+ * @file DavisJStermerApp.cpp
  * @author davis_stermer
  */
 
 #include <MainFrame.h>
-#include "AquariumApp.h"
+#include "DavisJStermerApp.h"
 #include "pch.h"
 
-bool AquariumApp::OnInit()
+bool DavisJStermerApp::OnInit()
 {
     if (!wxApp::OnInit())
         return false;
@@ -19,4 +19,4 @@ bool AquariumApp::OnInit()
     return true;
 }
 
-#include "AquariumApp.h"
+#include "DavisJStermerApp.h"

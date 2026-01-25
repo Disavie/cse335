@@ -1,13 +1,13 @@
 /**
- * @file AquariumView.cpp
+ * @file RightView.cpp
  * @author davisstermer
  */
 
-#include "AquariumView.h"
+#include "RightView.h"
 #include "pch.h"
 
 
-void AquariumView::Initialize(wxFrame* parent)
+void RightView::Initialize(wxFrame* parent)
 {
     Create(parent, wxID_ANY);
     SetBackgroundColour(*wxWHITE);

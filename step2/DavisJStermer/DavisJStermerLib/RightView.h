@@ -5,13 +5,13 @@
  *
  */
 
-#ifndef AQUARIUM_AQUARIUMVIEW_H
-#define AQUARIUM_AQUARIUMVIEW_H
+#ifndef DJS_RIGHTVIEW_H
+#define DJS_RIGHTVIEW_H
 
 /**
- * View class for our aquarium
+ * View class for our app
  */
-class AquariumView : public wxWindow{
+class RightView : public wxWindow{
 public:
     /**
     * Initialize the aquarium view class.
@@ -22,4 +22,4 @@ public:
 };
 
 
-#endif //AQUARIUM_AQUARIUMVIEW_H
+#endif //DJS_RIGHTVIEW_H

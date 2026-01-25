@@ -1,10 +1,12 @@
-project(AquariumLib)
+project(DavisJStermerLib)
 
 set(SOURCE_FILES pch.h
         MainFrame.cpp
         MainFrame.h
-        AquariumView.cpp
-        AquariumView.h)
+        RightView.cpp
+        RightView.h
+        LeftView.cpp
+        LeftView.h)
 
 set(wxBUILD_PRECOMP OFF)
 find_package(wxWidgets COMPONENTS core base xrc html xml REQUIRED)

@@ -3,6 +3,6 @@
  * @author davis_stermer
  */
 
-#include "AquariumApp.h"
+#include "DavisJStermerApp.h"
 #include "pch.h"
-wxIMPLEMENT_APP(AquariumApp);
+wxIMPLEMENT_APP(DavisJStermerApp);

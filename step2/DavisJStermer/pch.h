@@ -2,12 +2,12 @@
 * @file pch.h
  * @author davis_stermer
  */
-#ifndef AQUARIUM_PCH_H
-#define AQUARIUM_PCH_H
+#ifndef DJS_PCH_H
+#define DJS_PCH_H
 
 #include <wx/wxprec.h>
 #ifndef WX_PRECOMP
 #include <wx/wx.h>
 #endif
 
-#endif //AQUARIUM_PCH_H
+#endif //DJS_PCH_H

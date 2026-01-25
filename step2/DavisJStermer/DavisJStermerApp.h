@@ -1,15 +1,15 @@
 /**
-* @file AquariumApp.h
+* @file DavisJStermerApp.h
  * @author davis_stermer
  */
 
-#ifndef AQUARIUM_AQUARIUMAPP_H
-#define AQUARIUM_AQUARIUMAPP_H
+#ifndef DJS_DJSAPP_H
+#define DJS_DJSAPP_H
 
 /**
  * Main application class
  */
-class AquariumApp : public wxApp {
+class DavisJStermerApp : public wxApp {
 public:
  /**
  * Initialize the application.
@@ -18,4 +18,4 @@ public:
  bool OnInit() override;
 };
 
-#endif //AQUARIUM_AQUARIUMAPP_H
+#endif //DJS_DJSAPP_H
