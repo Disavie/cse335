@@ -10,11 +10,15 @@
 
 #include<memory>
 
+/**
+ * An object that describes our aquarium
+ *
+ */
+
 class Aquarium
 {
 private:
     std::unique_ptr<wxBitmap> mBackground;  ///< Background image to use
-    /// An object that describes our aquarium
 public:
     /**
     * Aquarium Constructor

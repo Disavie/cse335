@@ -15,6 +15,7 @@
 class AquariumView : public wxWindow{
 
 private:
+    ///Object that describes the aquarium we are viewing
     Aquarium  mAquarium;
 
     /**

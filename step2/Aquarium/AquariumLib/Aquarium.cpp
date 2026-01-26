@@ -5,10 +5,7 @@
 #include "pch.h"
 #include "Aquarium.h"
 
-/**
- * Draw the aquarium
- * @param dc The device context to draw on
- */
+
 
 
 Aquarium::Aquarium()
@@ -16,6 +13,11 @@ Aquarium::Aquarium()
     mBackground = std::make_unique<wxBitmap>(
             L"images/background1.png", wxBITMAP_TYPE_ANY);
 }
+
+/**
+ * Draw the aquarium
+ * @param dc The device context to draw on
+ */
 void Aquarium::OnDraw(wxDC *dc)
 {
     dc->DrawBitmap(*mBackground, 0, 0);
