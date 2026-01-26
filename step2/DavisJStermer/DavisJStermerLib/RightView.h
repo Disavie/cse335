@@ -18,7 +18,11 @@ public:
     * @param parent The parent window for this class
     */
     void Initialize(wxFrame* parent);
-
+    /**
+     *
+     * @param event Paint event object
+     */
+    void OnPaint(wxPaintEvent& event);
 };
 
 
