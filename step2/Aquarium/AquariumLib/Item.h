@@ -21,6 +21,16 @@ private:
     double  mY = 0;     ///< Y location for the center of the item
 
 public:
+
+    /// Default constructor (disabled)
+    Item() = delete;
+
+    /// Copy constructor (disabled)
+    Item(const Item &) = delete;
+
+    /// Assignment operator
+    void operator=(const Item &) = delete;
+
     /**
     * Destructor
     */
@@ -43,6 +53,9 @@ public:
      * @param y Y location in pixels
      */
     void SetLocation(double x, double y) { mX = x; mY = y; }
+
+protected:
+    Item(Aquarium *aquarium);
 };
 
 #endif //AQUARIUM_ITEM_H
