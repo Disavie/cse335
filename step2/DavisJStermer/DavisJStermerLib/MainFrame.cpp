@@ -2,9 +2,8 @@
  * @file MainFrame.cpp
  * @author davis
  */
-
-#include "MainFrame.h"
 #include "pch.h"
+#include "MainFrame.h"
 #include "RightView.h"
 #include "LeftView.h"
 

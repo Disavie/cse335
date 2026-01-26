@@ -2,9 +2,8 @@
  * @file LeftView.cpp
  * @author davis
  */
-
-#include "LeftView.h"
 #include "pch.h"
+#include "LeftView.h"
 
 void LeftView::Initialize(wxFrame* parent)
 {

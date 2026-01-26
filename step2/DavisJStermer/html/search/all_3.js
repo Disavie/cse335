@@ -1,4 +1,7 @@
 var searchData=
 [
-  ['oninit_0',['OnInit',['../class_aquarium_app.html#a3ad3b241d52e2772a3fd9a57d942e545',1,'AquariumApp']]]
+  ['main_2ecpp_0',['main.cpp',['../main_8cpp.html',1,'']]],
+  ['mainframe_1',['MainFrame',['../class_main_frame.html',1,'']]],
+  ['mainframe_2ecpp_2',['MainFrame.cpp',['../_main_frame_8cpp.html',1,'']]],
+  ['mainframe_2eh_3',['MainFrame.h',['../_main_frame_8h.html',1,'']]]
 ];

@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['mainframe_0',['MainFrame',['../class_main_frame.html',1,'']]]
+  ['leftview_0',['LeftView',['../class_left_view.html',1,'']]]
 ];

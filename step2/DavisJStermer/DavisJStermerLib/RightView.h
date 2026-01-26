@@ -1,5 +1,5 @@
 /**
- * @file AquariumView.h
+ * @file RightView.h
  * @author davisstermer
  *
  *

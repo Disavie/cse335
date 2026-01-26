@@ -3,9 +3,9 @@
  * @author davis_stermer
  */
 
+#include "pch.h"
 #include <MainFrame.h>
 #include "DavisJStermerApp.h"
-#include "pch.h"
 
 bool DavisJStermerApp::OnInit()
 {

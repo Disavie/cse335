@@ -41,7 +41,7 @@ var NAVTREE =
 
 var NAVTREEINDEX =
 [
-"_aquarium_app_8cpp.html"
+"_davis_j_stermer_app_8cpp.html"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronization';
